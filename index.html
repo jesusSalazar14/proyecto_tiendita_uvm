@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tiendita UVM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <div class="announcement-bar">
+        <div class="announcement-bar-content container">
+            <div class="content-info">
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +58 412-1988407
+                </p>
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    tiendauvm@uvm.edu.ve
+                </p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <p>@latienditauvm</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container section-logo">
+            <img src="img/logo.png" alt="Tienda UVM">
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/nosotros.html">Sobre Nosotros</a>
+            </nav>
+
+            <div class="contariner-actions">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button>
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <button>
+                    <i class="fa-regular fa-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-hero container">
+        <div class="info">
+            <h1>Camisas, <span>accesorios</span> y mucho más lo encuentras aquí.</h1>
+            <br>
+            <p>Compra los mejores productos y material POP en nuestra tienda.</p>
+        </div>
+    </section>
+
+    <style>
+        .main-scroll-div {
+            display: flex;
+            align-items: center;
+        }
+        .cover {
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 320%;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .scroll-images {
+            display: inline-flex;
+        }
+        .child {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .child-img {
+            width: 400px;
+            height: auto;
+        }
+        .icon {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+    <div class="main-scroll-div">
+        <button class="icon" onclick="scrollLeft()"> <i class="fas fa-angle-double-left"></i></button>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child"><img class="child-img" src="img/boligrafosdef.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/cartucheradef.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/fcaballero.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/gorrasdef.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/retratocoradef.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/tazasdef.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/fdama.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/LAZOSDEF.jpg" alt="image"></div>
+            </div>
+        </div>
+        <button class="icon" onclick="scrollRight()"> <i class="fas fa-angle-double-right"></i></button>
+    </div>
+
+    <script>
+        function scrollLeft() {
+            var container = document.querySelector(".cover");
+            container.scrollBy({ left: -350, behavior: 'smooth' });
+        }
+
+        function scrollRight() {
+            var container = document.querySelector(".cover");
+            container.scrollBy({ left: 350, behavior: 'smooth' });
+        }
+    </script>
+<br>
+<br>
+<section class="section-categories container">
+    <h2>Explora nuestros productos</h2>
+
+    <div class="container-card-categories">
+        <div class="card-category">
+            <div class="img-category">
+                <img src="img/fcaballero.jpg" alt="Category 1">
+            </div>
+            <h3><a href="/ropa.html" class="boton">Ropa personalizada</a></h3>
+        </div>
+        <div class="card-category">
+            <div class="img-category">
+                <img src="img/LAZOSDEF.jpg" alt="Category 2">
+            </div>
+            <h3><a href="/accesorios.html" class="boton">Accesorios Personalizados</a></h3>
+        </div>
+        <div class="card-category">
+            <div class="img-category">
+                <img src="img/boligrafosdef.jpg" alt="Category 3">
+            </div>
+            <h3><a href="/papeleria.html" class="boton">Papelería Creativa</a></h3>
+        </div>
+        <div class="card-category">
+            <div class="img-category">
+                <img src="img/porcosmedef.jpg" alt="Category 4">
+            </div>
+            <h3><a href="/regalos.html" class="boton">Regalos Personalizados</a></h3>
+        </div>
+        <div class="card-category">
+            <div class="img-category">
+                <img src="img/nosostros7.jpg" alt="Category 4">
+            </div>
+            <h3><a href="/eventos.html" class="boton">Organización de eventos</a></h3>
+        </div>
+    </div>
+</section>
+    <br>
+    <br>
+    <br>
+    <div class="section-categories">
+     <div class="card-category.p">
+                <p>&copy;2024 La Tiendita UVM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
