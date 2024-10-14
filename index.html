@@ -5,6 +5,7 @@
     <title>La Tiendita UVM</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo.png" type="image/png">
 </head>
     <div class="announcement-bar">
         <div class="announcement-bar-content container">
@@ -78,46 +79,61 @@
         }
         .child-img {
             width: 400px;
-            height: auto;
+            height: 400px;
+            object-fit: cover;    
         }
         .icon {
             background: none;
             border: none;
             cursor: pointer;
         }
-    </style>
-</head>
+        .scroll-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
 
-    <div class="main-scroll-div">
-        <button class="icon" onclick="scrollLeft()"> <i class="fas fa-angle-double-left"></i></button>
-        <div class="cover">
-            <div class="scroll-images">
-                <div class="child"><img class="child-img" src="img/boligrafosdef.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/cartucheradef.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/fcaballero.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/gorrasdef.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/retratocoradef.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/tazasdef.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/fdama.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/LAZOSDEF.jpg" alt="image"></div>
-            </div>
-        </div>
-        <button class="icon" onclick="scrollRight()"> <i class="fas fa-angle-double-right"></i></button>
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scroll-card {
+            flex: 0 0 auto;
+            width: 350px;
+            height: 600px;
+            text-align: center;
+        }
+
+    </style>
+
+    <div class="scroll-container">
+        <div class="scroll-card"><img class="child-img" src="img/boligrafosdef.jpg" alt="image"></div>
+        <div class="scroll-card"><img class="child-img" src="img/cartucheradef.jpg" alt="image"></div>
+        <div class="scroll-card"><img class="child-img" src="img/fcaballero.jpg" alt="image"></div>
+        <div class="scroll-card"><img class="child-img" src="img/gorrasdef.jpg" alt="image"></div>
+        <div class="scroll-card"><img class="child-img" src="img/retratocoradef.jpg" alt="image"></div>
+        <div class="scroll-card"><img class="child-img" src="img/tazasdef.jpg" alt="image"></div>
+        <div class="scroll-card"><img class="child-img" src="img/fdama.jpg" alt="image"></div>
+        <div class="scroll-card"><img class="child-img" src="img/LAZOSDEF.jpg" alt="image"></div>
     </div>
 
     <script>
-        function scrollLeft() {
-            var container = document.querySelector(".cover");
-            container.scrollBy({ left: -350, behavior: 'smooth' });
-        }
 
-        function scrollRight() {
-            var container = document.querySelector(".cover");
-            container.scrollBy({ left: 350, behavior: 'smooth' });
-        }
+        const content = document.querySelector(".scroll-container");
+
+        content.addEventListener("mousemove", (e) => {
+            const rect = content.getBoundingClientRect();
+            const scrollSpeed = 500;
+
+            if (e.clientX < rect.left + 100) {
+                content.scrollLeft -= scrollSpeed;
+            } else if (e.clientX > rect.right - 100) {
+                content.scrollLeft += scrollSpeed;
+            }
+        });
     </script>
-<br>
-<br>
+
 <section class="section-categories container">
     <h2>Explora nuestros productos</h2>
 
@@ -158,7 +174,7 @@
     <br>
     <br>
     <div class="section-categories">
-     <div class="card-category.p">
+    <div class="card-category.p">
                 <p>&copy;2024 La Tiendita UVM. Todos los derechos reservados.</p>
             </div>
         </div>

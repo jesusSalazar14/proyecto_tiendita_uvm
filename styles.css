@@ -23,7 +23,7 @@ body{
 }
 
 .announcement-bar {
-    background-color: #88bd2d;
+    background-color: #13953E;
     padding: 15px 0;
 }
 
@@ -31,7 +31,6 @@ body{
     display: flex;
     align-items: center;
 }
-   
 
 .content-info {
     display: flex;
@@ -78,7 +77,7 @@ body{
 
 
 header {
-    background-color:#c5ff62;
+    background-color:#88bd2d;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -223,7 +222,7 @@ header {
 
     }
 }
- 
+
 .container-img-hero {
     flex: 1.5;
     justify-content: center; /* Center the image horizontally */
@@ -298,8 +297,8 @@ header {
 
 /*categories*/
 .section-categories{
-    text-align: center; /* Centra el contenido horizontalmente */
-    margin-top: 50px auto; /* Agrega márgenes arriba y abajo */
+    text-align: center; 
+    margin-top: 50px auto; 
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -315,30 +314,35 @@ header {
 .container-card-categories {
     display: flex;
     gap: 30px;
-    justify-content: center; /* Centra las categorías horizontalmente */
-  flex-wrap: wrap; /* Permite que las categorías se envuelvan en líneas nuevas */
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 .card-category {
     background-color: var(--lime-green);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
-    border: 1px solid #ccc; /* Agrega un borde para separar las categorías */
-    width: 200px; /* Ajusta el ancho de cada categoría según sea necesario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc; 
+    width: 200px; 
     flex: 1;
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    margin: 20px; /* Agrega márgenes entre las categorías */
-    border-radius: 5px; /* Redondea los bordes */
-    transition: all 0.3s ease; /* Agrega una transición para los hover */
+    margin: 20px; 
+    border-radius: 5px; 
+    transition: all 0.3s ease;
 }
 
 .card-category h3 {
     font-size: 16px;
     font-weight: 700;
     color: var(--dark-green); 
-    text-align: left;
-    flex: 2;
+    text-align: center; 
+    width: 100%; 
+    margin: 0; 
+    min-height: 50px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 .card-category h3 a {
@@ -349,17 +353,17 @@ header {
 
 .card-category h3:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .card-category p {
-    font-size: 20px; /* Aumenta el tamaño de la fuente */
+    font-size: 20px; 
     font-weight: 700;
-    color: black; /* Cambia el color de la letra a negro */
+    color: black; 
     text-align: center;
-    height: 50px; /* Aumenta el tamaño de la barra */
-    line-height: 50px; /* Centra el texto verticalmente */
-    background-color: #88bd2d; /* Asegúrate de que el fondo sea verde */
+    height: 50px; 
+    line-height: 50px; 
+    background-color: #88bd2d; 
 }
 
 
@@ -368,42 +372,50 @@ header {
 .img-category {
     position: relative;
     flex: 1;
-    height: 150px; /* Ajusta la altura de la imagen según sea necesario */
-    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    display: flex; /* Utiliza flexbox para centrar la imagen */
+    height: 150px; 
+    width: 100%; 
+    display: flex; 
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Oculta el exceso de imagen */
+    overflow: hidden; 
 }
 
 .img-category img {
-    width: 60%;
-    height: auto;
+    width: auto;
+    height: 100%;
     object-fit: cover;
-    position: absolute;
-    bottom: 15px;
-    max-width: 100%; /* Evita que la imagen se estire */
+    position: relative;
+    bottom: 0;
+    max-width: 100%; 
+    flex: 1;
+    justify-content: center; 
+    display: flex;
+    text-align: center;
 }
 
 .boton {
     /* Estilos para los botones */
     display: inline-block;
-    background-color: #4CAF50; /* Verde */
+    background-color: #88bd2d; 
     color: white;
-    padding: 10px 20px;
+    padding: 10px 30px;
     text-decoration: none;
     border-radius: 4px;
-  }
+    font-size: 16px;
+    width: 171px;
+    text-align: center;
+}
+
 
   /* Footer */
 
-  .section-categories .card-category.p {
-        font-size: 20px; /* Aumenta el tamaño de la fuente */
+.section-categories .card-category.p {
+        font-size: 20px; 
         font-weight: 700;
-        color: black; /* Cambia el color de la letra a negro */
+        color: black; 
         text-align: center;
-        height: 50px; /* Aumenta el tamaño de la barra */
-        line-height: 50px; /* Centra el texto verticalmente */
-        background-color: #88bd2d; /* Asegúrate de que el fondo sea verde */
+        height: 50px; 
+        line-height: 50px; 
+        background-color: #88bd2d; 
 }
     
