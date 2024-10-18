@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ropa - La Tiendita UVM</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="img/logo.png" type="image/png">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa - La Tiendita UVM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
 <body>
-    <div class="announcement-bar">
-        <div class="announcement-bar-content container">
-            <div class="logo">
-                <img src="/img/logo.png" alt="Logo de la tienda" />
-            </div>
-            <div class="social-links">
-                <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <p>@latienditauvm</p>
-            </div>
-            <div class="content-info">
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +58 412-1988407
-                </p>
-                <p>
-                    <i class="fa-regular fa-envelope"></i>
-                    tiendauvm@uvm.edu.ve
-                </p>
-            </div>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Buscar...">
-                <button class="button-header">
+    <header>
+        <div class="container section-logo">
+            <img src="img/logo.png" alt="Tienda UVM">
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/nosotros.html">Sobre Nosotros</a>
+            </nav>
+
+            <div class="contariner-actions">
+                <button>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
@@ -42,213 +32,244 @@
                 <button class="button-header">
                     <i class="fa-regular fa-user"></i>
                 </button>
-            </div>       
-    </div>
-        <header>
-            <div class="container section-logo">
-                <nav>
-                    <a href="/index.html">Inicio</a>
-                    <a href="/nosotros.html">Sobre Nosotros</a>
-                    <a href="/ropa.html">Ropa Personalizada</a>
-                    <a href="/accesorios.html">Accesorios Personalizados</a>
-                    <a href="/papeleria.html">Papelería Creativa</a>
-                    <a href="/regalos.html">Regalos Personalizados</a>
-                    <a href="/eventos.html">Organización de Eventos</a>
-                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="best-products">
+       
+
+        <div class="product-container">
+            <div class="product-item">
+                <img src="img/fdama.jpg" alt="Product 1">
+                
+                </button>
+                <div class="container-stars">
                     
-        </header>
-    <section class="section-best-products container">
-        <h2>Franelas Personalizadas</h2>
-        <br>
-        <br>
-        <div class="container-cards-products">
-            <div class="card-product">
-                <div class="img-product">
-                    <img src="img/fdama.jpg" alt="Product 1">
                 </div>
-                <div class="header-card">
-                    <span>
-                        <h3>Franela dama
-                        </h3>
-                    </span>
-                    <button>
-                        <i class="fa-solid fa-heart"></i>
-                    </button>
-                </div>
-                <div class="container-stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="description">
-                    descripcion:
-                    Puedes elegir entre una amplia gama de colores y tallas para personalizar con nuestro logo UVM
-                <p class="description">
-                    Opciones Personalizadas: (Vinil, Sublimacion, Pextel)
-                <p class="description">
-                    tallas disponibles: S,M,L
-                    <p class="description"></p>
-                    precio: 10$
+                <style>
+                  body {
+                    font-family: cursive;
+                  }
+                  .color-option {
+                    display: inline-block;
+                    margin: 10px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                  }
+                  
+                  .color-option.turquoise {
+                    background-color: #40C0CB; 
+                  }
+                  
+                  .color-option.pink {
+                    background-color: #FFC0CB;
+                  }
+                  
+                  .color-option.black {
+                    background-color: black;
+                  }
+                  
+                  .color-option.navy {
+                    background-color: #000080;
+                  }
+                  
+                  .color-option.red {
+                    background-color: #8B0000;
+                  }
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <h1><span style="font-size: 24px; font-weight: bold;">Franela Dama</span></h1>
+                  <hr style="color: #90EE90;">
+                  <h2><span style="font-size: 20px; font-weight: bold;">Color:</span></h2>
+                  
+                  <div class="color-option turquoise"></div>
+                  <div class="color-option pink"></div>
+                  <div class="color-option black"></div>
+                  <div class="color-option navy"></div>
+                  <div class="color-option red"></div>
+                  
+                  
+                  </body>
+                  
+                
                 </p>
-                <button class="btn-add-cart">añadir al carrito</button>        
+                <p class="description">
+                    Opciones Personalizadas: (Vinil, Sublimación, Pextel)
+                </p>
+                <p class="description">
+                    Tallas disponibles: S, M, L
+                </p>
+                <p class="description">
+                    Precio: 10$
+                </p>
+                <br>  
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
-        </div>
-    </section>
-    <br>
-    <section class="section-best-products container">
-        <div class="container-cards-products">
-            <div class="card-product">
-                <div class="img-product">
-                    <img src="img/fcaballero.jpg" alt="Product 1">
-                </div>
-                <div class="header-card">
-                    <span>
-                        <h3>Franela Caballero
-                        </h3>
-                    </span>
-                    <button>
-                        <i class="fa-solid fa-heart"></i>
-                    </button>
-                </div>
+
+            <!-- Repetir el bloque de producto para más productos -->
+            <div class="product-item">
+                <img src="img/fcaballero.jpg" alt="Product 2">
+                
+                </button>
                 <div class="container-stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    
                 </div>
-                <p class="description">
-                    descripcion:
-                    Puedes elegir entre una amplia gama de colores y tallas para personalizar con nuestro logo UVM
-                <p class="description">
-                    Opciones Personalizadas: (Vinil, Sublimacion, Pextel)
-                <p class="description">
-                    tallas disponibles: S,M,L
-                    <p class="description"></p>
-                    precio: 10$ precio:
-                </p>
-            </p>
-                <button class="btn-add-cart">añadir al carrito</button>        
+                <style>
+                  body {
+                    font-family: cursive;
+                  }
+                  .color-option {
+                    display: inline-block;
+                    margin: 10px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                  }
+                  
+                  .color-option.turquoise {
+                    background-color: #40C0CB; 
+                  }
+                  
+                  .color-option.pink {
+                    background-color: #FFC0CB;
+                  }
+                  
+                  .color-option.black {
+                    background-color: black;
+                  }
+                  
+                  .color-option.navy {
+                    background-color: #000080;
+                  }
+                  
+                  .color-option.red {
+                    background-color: #8B0000;
+                  }
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <h1><span style="font-size: 24px; font-weight: bold;">Franela Caballero</span></h1>
+                  <hr style="color: #90EE90;">
+                  <h2><span style="font-size: 20px; font-weight: bold;">Color:</span></h2>
+                  
+                  <div class="color-option turquoise"></div>
+                  <div class="color-option pink"></div>
+                  <div class="color-option black"></div>
+                  <div class="color-option navy"></div>
+                  <div class="color-option red"></div>
+                  
+                <p class="description">Opciones Personalizadas: (Vinil, Sublimacion, Pextel)</p>
+                <p class="description">Tallas disponibles: S, M, L</p>
+                <p class="description">Precio: 10$</p>
+                <br>
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
-        </div>
-    </section>
-    <br>
-    <section class="section-best-products container">
-        <div class="container-cards-products">
-            <div class="card-product">
-                <div class="img-product">
-                    <img src="img/suedama.jpg" alt="Product 1">
-                </div>
-                <div class="header-card">
-                    <span>
-                        <h3>Sueter Dama
-                        </h3>
-                    </span>
-                    <button>
-                        <i class="fa-solid fa-heart"></i>
-                    </button>
-                </div>
-                <div class="container-stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="description">
-                    descripcion:
-                    Puedes elegir entre una amplia gama de colores y tallas para personalizar ¡Abrígate con estilo!
-                    Cómodos, versátiles y perfectos para
-                    cualquier ocasión.
-                <p class="description">
-                    tallas disponibles: S,M,L
-                    <p class="description"></p>
-                    precio: 15$
-                </p>
-                <button class="btn-add-cart">añadir al carrito</button>        
+            <div class="product-item">
+                <img src="img/suedama.jpg" alt="Product 3">
+              
+                
+                <style>
+                  body {
+                    font-family: cursive;
+                  }
+                  .color-option {
+                    display: inline-block;
+                    margin: 10px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                  }
+                  
+                  .color-option.turquoise {
+                    background-color: #40C0CB; 
+                  }
+                  
+                  .color-option.pink {
+                    background-color: #FFC0CB;
+                  }
+                  
+                  .color-option.black {
+                    background-color: black;
+                  }
+
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <h1><span style="font-size: 24px; font-weight: bold;">Sueter Dama</span></h1>
+                  <hr style="color: #90EE90;">
+                  <h2><span style="font-size: 20px; font-weight: bold;">Color:</span></h2>
+                  
+                  <div class="color-option turquoise"></div>
+                  <div class="color-option pink"></div>
+                  <div class="color-option black"></div>
+                  
+
+                <p class="description">Opciones Personalizadas: (Vinil, Sublimación, Pextel)</p>
+                <p class="description">Tallas disponibles: S, M, L</p>
+                <p class="description">Precio: 15$</p>
+                <br>
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
-        </div>
-    </section>
-    <br>
-    <section class="section-best-products container">
-        <div class="container-cards-products">
-            <div class="card-product">
-                <div class="img-product">
-                    <img src="img/suecaballero.jpg" alt="Product 1">
-                </div>
-                <div class="header-card">
-                    <span>
-                        <h3>Sueter Caballero
-                        </h3>
-                    </span>
-                    <button>
-                        <i class="fa-solid fa-heart"></i>
-                    </button>
-                </div>
-                <div class="container-stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="description">
-                    descripcion:
-                    Puedes elegir entre una amplia gama de colores y tallas para personalizar ¡Abrígate con estilo!
-                    Cómodos, versátiles y perfectos para
-                    cualquier ocasión.
-                <p class="description">
-                    tallas disponibles: S,M,L
-                    <p class="description"></p>
-                    precio: 15$
-                </p>
-                <button class="btn-add-cart">añadir al carrito</button>        
-            </div>
-        </div>
-    </section>
-    <br>
-    <section class="section-best-products container">
-        <br>
-        <br>
-        <h2>Gorras Perzonalizadas</h2>
-        <br>
-        <br>
-        <div class="container-cards-products">
-            <div class="card-product">
-                <div class="img-product">
-                    <img src="img/gorrasdef.jpg" alt="Product 1">
-                </div>
-                <div class="header-card">
-                    <span>
-                        <h3>Gorras</h3>
-                    </span>
-                    <button>
-                        <i class="fa-solid fa-heart"></i>
-                    </button>
-                </div>
-                <div class="container-stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="description">
-                    descripcion: Nuestras gorras clasicas seran tu accesorio perfecto
-                <p class="description">
-                    Opciones Personalizadas: Tenemos para ofrecerte (Bordados,Estampados,ect.)
-                <p class="description"> 
-                    descripcion: tenemos disponible en color: Negro
-                </p>
-                <p class="description">
-                    precio: 5$
-                </p>
-                <button class="btn-add-cart">añadir al carrito</button>        
-            </div>
-        </div>
-    </section>
+
+            <!-- Agregar más productos según sea necesario -->
+        
+        <div class="product-item">
+          <img src="img/suecaballero.jpg" alt="Product 4">
+          
+          </button>
+          <div class="container-stars">
+              
+          </div>
+          <style>
+            body {
+              font-family: cursive;
+            }
+            .color-option {
+              display: inline-block;
+              margin: 10px;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+            }
+            
+            .color-option.turquoise {
+              background-color: #40C0CB; 
+            }
+            
+            .color-option.pink {
+              background-color: #FFC0CB;
+            }
+            
+            .color-option.black {
+              background-color: black;
+            }
+            
+            </style>
+            </head>
+            <body>
+            
+            <h1><span style="font-size: 24px; font-weight: bold;">Sueter Caballero</span></h1>
+            <hr style="color: #90EE90;">
+            <h2><span style="font-size: 20px; font-weight: bold;">Color:</span></h2>
+            
+            <div class="color-option turquoise"></div>
+            <div class="color-option pink"></div>
+            <div class="color-option black"></div>
+            
+            
+          <p class="description">Opciones Personalizadas: (Vinil, Sublimacion, Pextel)</p>
+          <p class="description">Tallas disponibles: S, M, L</p>
+          <p class="description">Precio: 15$</p>
+          <br>
+          <button class="btn-add-cart">Añadir al carrito</button>
+      </div>
+    </div>
     <footer>
         <div class="announcement-bar custom-bar-width">
             <div class="content-info custom-content-info">
@@ -268,4 +289,7 @@
         </div>
     </footer>
 </body>
+
 </html>
+  
+ 

@@ -1,20 +1,28 @@
 @import url(https://fonts.bunny.net/css?family=alkatra:400);
 
-:root{
+:root {
     --lime-green: #88bd2d;
     --dark-green: #13953e;
     --tomato-red: #d0342d;
     --black: #000000;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Alkatra", display;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #88bd2d;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -128,9 +136,12 @@ body{
 }
 
 .social-links p {
-    margin: 0; /* Elimina el margen del párrafo */
-    font-size: 16px; /* Ajusta el tamaño de la fuente si es necesario */
-    color: black; /* Cambia el color del texto a negro */
+    margin: 0;
+    /* Elimina el margen del párrafo */
+    font-size: 16px;
+    /* Ajusta el tamaño de la fuente si es necesario */
+    color: black;
+    /* Cambia el color del texto a negro */
 }
 
 
@@ -151,8 +162,8 @@ header {
         display: flex;
         gap: 30px;
 
-        a{
-            color:#000000;
+        a {
+            color: #000000;
             font-weight: 500;
             font-size: 17px;
             text-decoration: none;
@@ -177,7 +188,7 @@ header {
 }
     
 
-/*seccion hero*/
+
 .section-hero {
     display: flex;
     justify-content: center;
@@ -185,40 +196,50 @@ header {
     padding: 20px;
     background-color: #fff;
 }
+
 .info {
     text-align: center;
     max-width: 50%;
 }
+
 .info h1 {
     font-size: 2.5em;
     color: #13953e;
 }
+
 .info p {
     font-size: 1.2em;
     color: #6c757d;
 }
+
 .container-buttons-header {
     text-align: center;
     margin-top: 20px;
 }
-.btn-primary, .btn-secondary {
+
+.btn-primary,
+.btn-secondary {
     padding: 10px 20px;
     margin-right: 10px;
     border: none;
     cursor: pointer;
 }
+
 .btn-primary {
     background-color: #007bff;
     color: #fff;
 }
+
 .btn-secondary {
     background-color: #6c757d;
     color: #fff;
 }
+
 .container-img-hero img {
     max-width: 100%;
     height: auto;
 }
+
 .message-float-header {
     position: absolute;
     top: 10px;
@@ -229,12 +250,13 @@ header {
     display: flex;
     align-items: center;
 }
+
 .message-float-header i {
     margin-right: 5px;
 }
 
 
-.container-buttons-header{
+.container-buttons-header {
     display: flex;
     gap: 20px;
     margin-top: 20px;
@@ -253,23 +275,23 @@ header {
     }
 
 
-    button:first-child{
+    button:first-child {
         background-color: var(--lime-green);
     }
 
     button:last-child {
         color: var(--dark-green)
-
     }
 }
 
 .container-img-hero {
     flex: 1.5;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center;
+    /* Center the image horizontally */
     display: flex;
     position: relative;
     text-align: center;
-    
+
 
     .img-hero {
         background-color: #ffffff;
@@ -308,23 +330,24 @@ header {
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
 
-        i{
+        i {
             color: #ffffff;
             font-size: 16px;
             background-color: var(--dark-green);
             padding: 10px;
             border-radius: 50%;
 
-            span{
+            span {
                 display: flex;
                 flex-direction: column;
-                gap: 5px ;
+                gap: 5px;
 
-                p{
+                p {
                     font-size: 14px;
                     color: var(--lime-green);
                 }
-                p:first-child{
+
+                p:first-child {
                     color: #13953e;
                     font-weight: 170;
                 }
@@ -335,10 +358,10 @@ header {
     }
 }
 
-/*categories*/
-.section-categories{
-    text-align: center; 
-    margin-top: 50px auto; 
+
+.section-categories {
+    text-align: center;
+    margin-top: 50px auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -355,56 +378,56 @@ header {
 .container-card-categories {
     display: flex;
     gap: 30px;
-    justify-content: center; 
-    flex-wrap: wrap; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card-category {
     background-color: var(--lime-green);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    border: 1px solid #ccc; 
-    width: 200px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 200px;
     flex: 1;
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    margin: 20px; 
-    border-radius: 5px; 
+    margin: 20px;
+    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .card-category h3 {
     font-size: 16px;
     font-weight: 700;
-    color: var(--dark-green); 
-    text-align: center; 
-    width: 100%; 
-    margin: 0; 
-    min-height: 50px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    color: var(--dark-green);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-category h3 a {
     color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
-    text-decoration: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 .card-category h3:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-category p {
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: 700;
-    color: black; 
+    color: black;
     text-align: center;
-    height: 50px; 
-    line-height: 50px; 
-    background-color: #88bd2d; 
+    height: 50px;
+    line-height: 50px;
+    background-color: #88bd2d;
 }
 
 
@@ -413,12 +436,12 @@ header {
 .img-category {
     position: relative;
     flex: 1;
-    height: 150px; 
-    width: 100%; 
-    display: flex; 
+    height: 150px;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .img-category img {
@@ -427,9 +450,9 @@ header {
     object-fit: cover;
     position: relative;
     bottom: 0;
-    max-width: 100%; 
+    max-width: 100%;
     flex: 1;
-    justify-content: center; 
+    justify-content: center;
     display: flex;
     text-align: center;
 }
@@ -437,7 +460,7 @@ header {
 .boton {
     /* Estilos para los botones */
     display: inline-block;
-    background-color: #88bd2d; 
+    background-color: #88bd2d;
     color: white;
     padding: 10px 30px;
     text-decoration: none;
@@ -448,7 +471,7 @@ header {
 }
 
 
-  /* Footer */
+/* Footer */
 
 .custom-bar-width {
     width: 100%; /* Ocupa todo el ancho */
@@ -474,4 +497,12 @@ header {
 
 .custom-content-info p {
     margin: 0 10px; /* Espaciado horizontal entre los párrafos */
+.section-categories .card-category.p {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #88bd2d;
 }
