@@ -12,28 +12,54 @@
     <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 
-<body>
+
+  <div class="announcement-bar">
+    <div class="announcement-bar-content container">
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo de la tienda" />
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <p>@latienditauvm</p>
+        </div>
+        <div class="content-info">
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +58 412-1988407
+            </p>
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                tiendauvm@uvm.edu.ve
+            </p>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar...">
+            <button class="button-header">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+            <button class="button-header">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <button class="button-header">
+                <a href="/login.html"><i class="fa-regular fa-user"></i></a>
+            </button>
+        </div>       
+</div>
     <header>
         <div class="container section-logo">
-            <img src="img/logo.png" alt="Tienda UVM">
             <nav>
                 <a href="/index.html">Inicio</a>
                 <a href="/nosotros.html">Sobre Nosotros</a>
+                <a href="/ropa.html">Ropa Personalizada</a>
+                <a href="/accesorios.html">Accesorios Personalizados</a>
+                <a href="/papeleria.html">Papelería Creativa</a>
+                <a href="/regalos.html">Regalos Personalizados</a>
+                <a href="/eventos.html">Organización de Eventos</a>
             </nav>
-
-            <div class="contariner-actions">
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-                <button class="button-header">
-                    <i class="fa-regular fa-bell"></i>
-                </button>
-                <button class="button-header">
-                    <i class="fa-regular fa-user"></i>
-                </button>
-            </div>
-        </div>
+                
     </header>
 
     
@@ -46,8 +72,13 @@
                 </div>
                 <style>
                     body {
-                      font-family: cursive;
-                    }
+                  font-family: "Alkatra", display;
+                  }
+
+                  header, footer {
+                  font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+                  }
+
                     .color-option {
                       display: inline-block;
                       margin: 10px;
@@ -61,6 +92,7 @@
                     }
   
                     </style>
+                    
                 
                     
                     <h1><span style="font-size: 24px; font-weight: bold;">Gorra Unisex</span></h1>
@@ -571,6 +603,26 @@
 
             <!-- Agregar más productos según sea necesario -->
     </div>
+
+    <footer>
+      <div class="announcement-bar custom-bar-width">
+          <div class="content-info custom-content-info">
+              <p>
+                  <i class="fa-solid fa-phone"></i>
+                  +58 412-1988407
+              </p>
+              <p>
+                  &copy;2024 La Tiendita UVM. Todos los derechos reservados.
+              </p>
+              <p>
+                  <i class="fa-regular fa-envelope"></i>
+                  tiendauvm@uvm.edu.ve
+              </p>
+
+          </div>   
+      </div>
+  </footer>
+
 </body>
 
 </html>

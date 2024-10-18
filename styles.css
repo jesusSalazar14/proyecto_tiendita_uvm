@@ -471,38 +471,28 @@ header {
 }
 
 
-/* Footer */
 
-.custom-bar-width {
-    width: 100%; /* Ocupa todo el ancho */
-    height: 60px; /* Altura de la barra */
-    margin: 0 auto; /* Centra la barra */
-    background-color: #88bd2d; /* Color de fondo verde */
-    display: flex; /* Usa flexbox para alinear los elementos */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra verticalmente */
+/*css productos ropa*/
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-around;
+    /* Espacio entre los productos */
 }
 
-.custom-social-links {
-    display: flex; /* Usa flexbox para alinear los elementos */
-    align-items: center; /* Centra verticalmente */
-    margin-right: 20px; /* Espaciado a la derecha */
-}
-
-.custom-content-info {
-    display: flex; /* Usa flexbox para alinear los elementos */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-}
-
-.custom-content-info p {
-    margin: 0 10px; /* Espaciado horizontal entre los párrafos */
-.section-categories .card-category.p {
-    font-size: 20px;
-    font-weight: 700;
-    color: black;
+.product-item {
+    width: 32%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 1vw;
+    border-radius: 10px;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
-    background-color: #88bd2d;
+}
+
+
+.best-products {
+    width: 100%;
+    padding: 1vw;
 }
