@@ -11,6 +11,15 @@
 <body>
     <div class="announcement-bar">
         <div class="announcement-bar-content container">
+            <div class="logo">
+                <img src="/img/logo.png" alt="Logo de la tienda" />
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <p>@latienditauvm</p>
+            </div>
             <div class="content-info">
                 <p>
                     <i class="fa-solid fa-phone"></i>
@@ -21,35 +30,33 @@
                     tiendauvm@uvm.edu.ve
                 </p>
             </div>
-            <div class="social-links">
-                <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <p>@latienditauvm</p>
-            </div>
-        </div>
-    </div>
-    <header>
-        <div class="container section-logo">
-            <img src="img/logo.png" alt="Tienda UVM">
-            <nav>
-                <a href="/index.html">Inicio</a>
-                <a href="/nosotros.html">Sobre Nosotros</a>
-            </nav>
-
-            <div class="contariner-actions">
-                <button>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <button class="button-header">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button>
+            </div>
+                <button class="button-header">
                     <i class="fa-regular fa-bell"></i>
                 </button>
-                <button>
+                <button class="button-header">
                     <i class="fa-regular fa-user"></i>
                 </button>
-            </div>
-        </div>
-    </header>
+            </div>       
+    </div>
+        <header>
+            <div class="container section-logo">
+                <nav>
+                    <a href="/index.html">Inicio</a>
+                    <a href="/nosotros.html">Sobre Nosotros</a>
+                    <a href="/ropa.html">Ropa Personalizada</a>
+                    <a href="/accesorios.html">Accesorios Personalizados</a>
+                    <a href="/papeleria.html">Papelería Creativa</a>
+                    <a href="/regalos.html">Regalos Personalizados</a>
+                    <a href="/eventos.html">Organización de Eventos</a>
+                </nav>
+                    
+        </header>
     <section class="section-hero container">
         <div class="info">
             <h1>La Tiendita UVM</h1>
@@ -66,7 +73,7 @@
             overflow-x: auto;
             white-space: nowrap;
             width: 320%;
-            border: 2px solid #ccc;
+            border: 2px solid #fff;
             padding: 10px;
             background-color: #fff;
         }
@@ -79,19 +86,35 @@
         }
         .child-img {
             width: 400px;
-            height: 250px;
-            object-fit: cover;
+            height: 400px;
+            object-fit: cover;    
         }
         .icon {
             background: none;
             border: none;
             cursor: pointer;
         }
-    </style>
-</head>
+        .scroll-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
 
-        <div class="section-hero">
-            <div class="container-img-hero"></div>
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scroll-card {
+            flex: 0 0 auto;
+            width: 350px;
+            height: 600px;
+            text-align: center;
+        }
+
+    </style>
+
+    <div class="scroll-container">
                 <div class="child"><img class="child-img" src="img/nosostros1.jpg" alt="image"></div>
                 <div class="child"><img class="child-img" src="img/nosostros2.jpg" alt="image"></div>
                 <div class="child"><img class="child-img" src="img/nosostros3.jpg" alt="image"></div>
@@ -100,6 +123,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        const content = document.querySelector(".scroll-container");
+
+        content.addEventListener("mousemove", (e) => {
+            const rect = content.getBoundingClientRect();
+            const scrollSpeed = 500;
+
+            if (e.clientX < rect.left + 100) {
+                content.scrollLeft -= scrollSpeed;
+            } else if (e.clientX > rect.right - 100) {
+                content.scrollLeft += scrollSpeed;
+            }
+        });
+    </script>
     
     <section class="section-hero container">
         <div class="info">
@@ -125,5 +164,23 @@
                 clientes y del mercado en general</p>
         </div>
     </section>
+    <footer>
+        <div class="announcement-bar custom-bar-width">
+            <div class="content-info custom-content-info">
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +58 412-1988407
+                </p>
+                <p>
+                    &copy;2024 La Tiendita UVM. Todos los derechos reservados.
+                </p>
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    tiendauvm@uvm.edu.ve
+                </p>
+
+            </div>   
+        </div>
+    </footer>
 </body>
 </html>

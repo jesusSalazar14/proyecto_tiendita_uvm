@@ -7,46 +7,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/logo.png" type="image/png">
 </head>
-    <div class="announcement-bar">
-        <div class="announcement-bar-content container">
-            <div class="content-info">
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +58 412-1988407
-                </p>
-                <p>
-                    <i class="fa-regular fa-envelope"></i>
-                    tiendauvm@uvm.edu.ve
-                </p>
-            </div>
-            <div class="social-links">
-                <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <p>@latienditauvm</p>
-            </div>
+<div class="announcement-bar">
+    <div class="announcement-bar-content container">
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo de la tienda" />
         </div>
-    </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <p>@latienditauvm</p>
+        </div>
+        <div class="content-info">
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +58 412-1988407
+            </p>
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                tiendauvm@uvm.edu.ve
+            </p>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar...">
+            <button class="button-header">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+            <button class="button-header">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <button class="button-header">
+                <i class="fa-regular fa-user"></i>
+            </button>
+        </div>       
+</div>
     <header>
         <div class="container section-logo">
-            <img src="img/logo.png" alt="Tienda UVM">
             <nav>
                 <a href="/index.html">Inicio</a>
                 <a href="/nosotros.html">Sobre Nosotros</a>
+                <a href="/ropa.html">Ropa Personalizada</a>
+                <a href="/accesorios.html">Accesorios Personalizados</a>
+                <a href="/papeleria.html">Papelería Creativa</a>
+                <a href="/regalos.html">Regalos Personalizados</a>
+                <a href="/eventos.html">Organización de Eventos</a>
             </nav>
-
-            <div class="contariner-actions">
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <button>
-                    <i class="fa-regular fa-bell"></i>
-                </button>
-                <button>
-                    <i class="fa-regular fa-user"></i>
-                </button>
-            </div>
-        </div>
+                
     </header>
 
     <section class="section-hero container">
@@ -57,55 +64,61 @@
         </div>
     </section>
 
-    <style>
-        .main-scroll-div {
-            display: flex;
-            align-items: center;
-        }
-        .cover {
-            overflow-x: auto;
-            white-space: nowrap;
-            width: 320%;
-            border: 2px solid #ccc;
-            padding: 10px;
-            background-color: #fff;
-        }
-        .scroll-images {
-            display: inline-flex;
-        }
-        .child {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .child-img {
-            width: 400px;
-            height: 400px;
-            object-fit: cover;    
-        }
-        .icon {
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-        .scroll-container {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-        }
+<style>
+/* estilos imagenes del inicio */
 
-        .scroll-container::-webkit-scrollbar {
-            display: none;
-        }
+.main-scroll-div {
+    display: flex;
+    align-items: center;
+}
+.cover {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 320%;
+    border: 2px solid #fff;
+    padding: 10px;
+    background-color: #fff;
+}
+.scroll-images {
+    display: inline-flex;
+}
+.child {
+    display: inline-block;
+    margin-right: 10px;
+}
+.child-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;    
+}
+.icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-bottom: 0;
+}
 
-        .scroll-card {
-            flex: 0 0 auto;
-            width: 350px;
-            height: 600px;
-            text-align: center;
-        }
 
-    </style>
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+.section-categories h2 {
+    margin-top: 10px; /* Ajusta el espacio superior */
+
+
+.scroll-card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 600px;
+    text-align: center;
+}
+</style>
 
     <div class="scroll-container">
         <div class="scroll-card"><img class="child-img" src="img/boligrafosdef.jpg" alt="image"></div>
@@ -119,6 +132,7 @@
     </div>
 
     <script>
+/* js para el scroll de las imagenes */
 
         const content = document.querySelector(".scroll-container");
 
@@ -133,7 +147,8 @@
             }
         });
     </script>
-
+    <br>
+    <br>
 <section class="section-categories container">
     <h2>Explora nuestros productos</h2>
 
@@ -173,11 +188,23 @@
     <br>
     <br>
     <br>
-    <div class="section-categories">
-    <div class="card-category.p">
-                <p>&copy;2024 La Tiendita UVM. Todos los derechos reservados.</p>
-            </div>
+    <footer>
+        <div class="announcement-bar custom-bar-width">
+            <div class="content-info custom-content-info">
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +58 412-1988407
+                </p>
+                <p>
+                    &copy;2024 La Tiendita UVM. Todos los derechos reservados.
+                </p>
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    tiendauvm@uvm.edu.ve
+                </p>
+
+            </div>   
         </div>
-    </div>   
+    </footer>
 </body>
 </html>
