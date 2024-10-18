@@ -91,6 +91,10 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para dar profundidad */
 }
 
+.button-header i {
+    color: #a1e727; /* Cambia el color del icono del login a verde */
+}
+
 .logo {
     /* Ajusta el tamaño del logo */
     width: 100px; /* Ancho del logo */
