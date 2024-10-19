@@ -1,35 +1,46 @@
 @import url(https://fonts.bunny.net/css?family=alkatra:400);
 
-:root{
+:root {
     --lime-green: #88bd2d;
     --dark-green: #13953e;
     --tomato-red: #d0342d;
     --black: #000000;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Alkatra", display;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #88bd2d;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .announcement-bar {
-    background-color: #13953E;
+    background-color: #88bd2d;
     padding: 15px 0;
 }
 
 .announcement-bar-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .content-info {
@@ -37,12 +48,17 @@ body{
     align-items: center;
     gap: 40px;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+    
 
     p{
         display: flex;
-        align-items: center;
         gap: 15px;
         font-size: 14px;
+        align-items: center;
+        
 
         i{
             color: var(--black);
@@ -50,34 +66,89 @@ body{
     }
 }
 
+
+.search-container {
+    display: flex; /* Utiliza flexbox para alinear el input y el botón */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 0; /* Margen alrededor del contenedor del buscador */
+    max-width: 300px; /* Establece un ancho máximo para el buscador */
+    width: 100%; /* Asegura que el contenedor use el espacio disponible */
+}
+
+.search-input {
+    padding: 10px; /* Espaciado interno para el input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes ligeramente curvados */
+    flex-grow: 1; /* Permite que el input ocupe el espacio disponible */
+    margin-right: 15px; /* Espacio entre el input y el botón */
+}
+
+.button-header {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes ligeramente curvados */
+    padding: 8px 12px; /* Espaciado interno ajustado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    margin-right: 10px; /* Espacio entre el botón y el siguiente */
+}
+
+.button-header:hover {
+    background-color: gray; /* Cambia el color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para dar profundidad */
+}
+
+.button-header i {
+    color: #a1e727; /* Cambia el color del icono del login a verde */
+}
+
+.logo {
+    /* Ajusta el tamaño del logo */
+    width: 100px; /* Ancho del logo */
+    height: 50px; /* Alto del logo */
+    margin: 10px; /* Espacio alrededor del logo */
+    display: inline-block; /* Permite que el logo se muestre en línea con otros elementos */
+}  
+.logo img {
+    /* Ajusta el tamaño de la imagen del logo */
+    width: 100%; /* Ancho de la imagen del logo */
+    height: 100%; /* Alto de la imagen del logo */
+    object-fit: contain; /* Ajusta la imagen para que se muestre completa */
+}
+
+
 .social-links {
     display: flex;
     align-items: center;
-    gap: 5px; /* Reduce el espacio entre el icono y el texto */
+    justify-content: center; /* O usa flex-start o flex-end según lo necesites */
+    gap: 5px; /* Espacio entre el icono y el texto */
 }
 
 .social-links a {
     color: black; /* Cambia el color del icono a negro */
     text-decoration: none; /* Quita el subrayado del enlace */
+    margin: 5px; /* Espacio alrededor de cada enlace */
 }
 
 .social-links a i {
-    font-size: 20px;
+    font-size: 20px; /* Tamaño del icono */
 }
 
 .social-links p {
-    margin: 0; /* Elimina el margen del párrafo */
-    font-size: 16px; /* Ajusta el tamaño de la fuente si es necesario */
-    color: black; /* Cambia el color del texto a negro */
+    margin: 0;
+    /* Elimina el margen del párrafo */
+    font-size: 16px;
+    /* Ajusta el tamaño de la fuente si es necesario */
+    color: black;
+    /* Cambia el color del texto a negro */
 }
-
 
 
 /*Header*/
 
-
 header {
-    background-color:#88bd2d;
+    background-color:#a1e727;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -91,8 +162,8 @@ header {
         display: flex;
         gap: 30px;
 
-        a{
-            color:#000000;
+        a {
+            color: #000000;
             font-weight: 500;
             font-size: 17px;
             text-decoration: none;
@@ -109,76 +180,66 @@ header {
         width: 100px;
         height: 55px;
     }
-
-    .container-actions {
-        display: flex;
-        gap: 20px;
-
-        button {
-            border: none;
-            background-color: transparent;
-            border: 1px solid var(--dark-green);
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            &:hover {
-                background-color: var(--dark-green);
-
-                i{
-                    color: #ffffff;
-                }
-            }
-        }
-    }
 }
 
-/*seccion hero*/
+.header-container { 
+    text-align: left; /* Alinear texto y elementos hacia la izquierda */ 
+
+}
+    
+
+
 .section-hero {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
+
 .info {
     text-align: center;
     max-width: 50%;
 }
+
 .info h1 {
     font-size: 2.5em;
     color: #13953e;
 }
+
 .info p {
     font-size: 1.2em;
     color: #6c757d;
 }
+
 .container-buttons-header {
     text-align: center;
     margin-top: 20px;
 }
-.btn-primary, .btn-secondary {
+
+.btn-primary,
+.btn-secondary {
     padding: 10px 20px;
     margin-right: 10px;
     border: none;
     cursor: pointer;
 }
+
 .btn-primary {
     background-color: #007bff;
     color: #fff;
 }
+
 .btn-secondary {
     background-color: #6c757d;
     color: #fff;
 }
+
 .container-img-hero img {
     max-width: 100%;
     height: auto;
 }
+
 .message-float-header {
     position: absolute;
     top: 10px;
@@ -189,12 +250,13 @@ header {
     display: flex;
     align-items: center;
 }
+
 .message-float-header i {
     margin-right: 5px;
 }
 
 
-.container-buttons-header{
+.container-buttons-header {
     display: flex;
     gap: 20px;
     margin-top: 20px;
@@ -213,23 +275,23 @@ header {
     }
 
 
-    button:first-child{
+    button:first-child {
         background-color: var(--lime-green);
     }
 
     button:last-child {
         color: var(--dark-green)
-
     }
 }
 
 .container-img-hero {
     flex: 1.5;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center;
+    /* Center the image horizontally */
     display: flex;
     position: relative;
     text-align: center;
-    
+
 
     .img-hero {
         background-color: #ffffff;
@@ -268,23 +330,24 @@ header {
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
 
-        i{
+        i {
             color: #ffffff;
             font-size: 16px;
             background-color: var(--dark-green);
             padding: 10px;
             border-radius: 50%;
 
-            span{
+            span {
                 display: flex;
                 flex-direction: column;
-                gap: 5px ;
+                gap: 5px;
 
-                p{
+                p {
                     font-size: 14px;
                     color: var(--lime-green);
                 }
-                p:first-child{
+
+                p:first-child {
                     color: #13953e;
                     font-weight: 170;
                 }
@@ -295,75 +358,76 @@ header {
     }
 }
 
-/*categories*/
-.section-categories{
-    text-align: center; 
-    margin-top: 50px auto; 
+
+.section-categories {
+    text-align: center;
+    margin-top: 50px auto;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 10px;
 
     h2 {
         text-align: center;
         font-size: 30px;
         font-weight: 700;
         color: var(--dark-green);
+        margin-top: 0px;
     }
 }
 
 .container-card-categories {
     display: flex;
     gap: 30px;
-    justify-content: center; 
-    flex-wrap: wrap; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card-category {
     background-color: var(--lime-green);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    border: 1px solid #ccc; 
-    width: 200px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 200px;
     flex: 1;
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    margin: 20px; 
-    border-radius: 5px; 
+    margin: 20px;
+    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .card-category h3 {
     font-size: 16px;
     font-weight: 700;
-    color: var(--dark-green); 
-    text-align: center; 
-    width: 100%; 
-    margin: 0; 
-    min-height: 50px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    color: var(--dark-green);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-category h3 a {
     color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
-    text-decoration: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 .card-category h3:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-category p {
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: 700;
-    color: black; 
+    color: black;
     text-align: center;
-    height: 50px; 
-    line-height: 50px; 
-    background-color: #88bd2d; 
+    height: 50px;
+    line-height: 50px;
+    background-color: #88bd2d;
 }
 
 
@@ -372,12 +436,12 @@ header {
 .img-category {
     position: relative;
     flex: 1;
-    height: 150px; 
-    width: 100%; 
-    display: flex; 
+    height: 150px;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .img-category img {
@@ -386,9 +450,9 @@ header {
     object-fit: cover;
     position: relative;
     bottom: 0;
-    max-width: 100%; 
+    max-width: 100%;
     flex: 1;
-    justify-content: center; 
+    justify-content: center;
     display: flex;
     text-align: center;
 }
@@ -396,7 +460,7 @@ header {
 .boton {
     /* Estilos para los botones */
     display: inline-block;
-    background-color: #88bd2d; 
+    background-color: #88bd2d;
     color: white;
     padding: 10px 30px;
     text-decoration: none;
@@ -407,18 +471,25 @@ header {
 }
 
 
-  /* Footer */
 
-.section-categories .card-category.p {
-        font-size: 20px; 
-        font-weight: 700;
-        color: black; 
-        text-align: center;
-        height: 50px; 
-        line-height: 50px; 
-        background-color: #88bd2d; 
+/*css productos ropa*/
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-around;
+    /* Espacio entre los productos */
 }
-    
+
+.product-item {
+    width: 32%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 1vw;
+    border-radius: 10px;
+    text-align: center;
+}
 /*/ EVENTOS /*/
 
 .Size1{
@@ -432,12 +503,12 @@ header {
 }
 
 .Marco1 {
-    background-image: url("rectangulo.jpg");
+    background-image: url('rectangulo.png');
     padding: 50px;
     height: 809px;
 }
 .Servicios{
-    background-color: #0D2100;
+    background-color: #1a1a1a;
     background-size: 1920px 233px; 
     background-position-x: 3%; 
     padding: 50px; 
@@ -449,29 +520,4 @@ header {
     text-align: center;
     font-size: 50px;
     text-decoration-line: #ffffff;
-}
-.todocuadrorojo{
-    display: flex; 
-    justify-content: space-between; 
-}
-
-.cuadrorojo1,
-.cuadrorojo2,
-.cuadrorojo3,
-.cuadrorojo4,
-.cuadrorojo5 {
-    background-color: #D0342D;
-    width: 253px; 
-    height: 600px; 
-    box-shadow: 0px 0px 5px 5px rgba(83, 52, 52, 0.34);
-    font-size: 40px; 
-    text-align: center; 
-    color: #FFB1AE;
-    margin: 30px;
-}
-.cuadrorojo2 {
-    font-size: 36px;
-}
-.cuadrorojo4{
-    font-size: 30px;
 }
