@@ -419,3 +419,59 @@ header {
         background-color: #88bd2d; 
 }
     
+/*/ EVENTOS /*/
+
+.Size1{
+    font-size:40px ;
+    font-weight: bold;
+    color: #77CE79;
+}
+.Size2{
+    font-size: 35px;
+    font-weight:lighter;
+}
+
+.Marco1 {
+    background-image: url("rectangulo.jpg");
+    padding: 50px;
+    height: 809px;
+}
+.Servicios{
+    background-color: #0D2100;
+    background-size: 1920px 233px; 
+    background-position-x: 3%; 
+    padding: 50px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    color: white; 
+    text-align: center;
+    font-size: 50px;
+    text-decoration-line: #ffffff;
+}
+.todocuadrorojo{
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.cuadrorojo1,
+.cuadrorojo2,
+.cuadrorojo3,
+.cuadrorojo4,
+.cuadrorojo5 {
+    background-color: #D0342D;
+    width: 253px; 
+    height: 600px; 
+    box-shadow: 0px 0px 5px 5px rgba(83, 52, 52, 0.34);
+    font-size: 40px; 
+    text-align: center; 
+    color: #FFB1AE;
+    margin: 30px;
+}
+.cuadrorojo2 {
+    font-size: 36px;
+}
+.cuadrorojo4{
+    font-size: 30px;
+}
