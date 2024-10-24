@@ -561,3 +561,24 @@ header {
     width: 171px;
     text-align: center;
 }
+
+
+
+/*css productos ropa*/
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-around;
+    
+}
+
+.product-item {
+    width: 32%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 1vw;
+    border-radius: 10px;
+    text-align: center;
+}

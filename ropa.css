@@ -1,0 +1,146 @@
+/* FRAN.DAMA*/
+body {
+    font-family: "Alkatra", display;
+    }
+
+    header, footer {
+    font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+    }
+
+
+    .color-option {
+      display: inline-block;
+      
+      margin: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    
+    .color-option.turquoise {
+      background-color: #40C0CB; 
+    }
+    
+    .color-option.pink {
+      background-color: #FFC0CB;
+    }
+    
+    .color-option.black {
+      background-color: black;
+    }
+    
+    .color-option.navy {
+      background-color: #000080;
+    }
+    
+    .color-option.red {
+      background-color: #8B0000;
+    }
+
+    /* FRAN.CABALLERO*/
+    body {
+        font-family: "Alkatra", display;
+        }
+
+        header, footer {
+        font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+        }
+        .color-option {
+          display: inline-block;
+          margin: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        
+        .color-option.turquoise {
+          background-color: #40C0CB; 
+        }
+        
+        .color-option.pink {
+          background-color: #FFC0CB;
+        }
+        
+        .color-option.black {
+          background-color: black;
+        }
+        
+        .color-option.navy {
+          background-color: #000080;
+        }
+        
+        .color-option.red {
+          background-color: #8B0000;
+        }
+
+         /* SUE.DAMA*/
+         body {
+            font-family: "Alkatra", display;
+            }
+
+            header, footer {
+            font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+            }
+            .color-option {
+              display: inline-block;
+              margin: 10px;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+            }
+            
+            .color-option.turquoise {
+              background-color: #40C0CB; 
+            }
+            
+            .color-option.pink {
+              background-color: #FFC0CB;
+            }
+            
+            .color-option.black {
+              background-color: black;
+            }
+
+            /* SUE.CABALLERO*/
+            body {
+                font-family: "Alkatra", display;
+                }
+
+                header, footer {
+                font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+                }
+          .color-option {
+            display: inline-block;
+            margin: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+          
+          .color-option.turquoise {
+            background-color: #40C0CB; 
+          }
+          
+          .color-option.pink {
+            background-color: #FFC0CB;
+          }
+          
+          .color-option.black {
+            background-color: black;
+          }
+
+          .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1vw;
+            justify-content: space-around;
+            
+        }
+        
+        .product-item {
+            width: 32%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 1vw;
+            border-radius: 10px;
+            text-align: center;
