@@ -1,0 +1,36 @@
+body {
+    font-family: "Alkatra", display;
+     }
+     header, footer {
+    font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+     }
+     .color-option {
+    display: inline-block;
+     margin: 10px;
+     width: 30px;
+     height: 30px;
+    border-radius: 50%;
+     }   
+     
+     /*Agenda*/
+     .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: central;
+      }
+
+      /*Calendario*/
+      .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: central;
+      }
+      /*Mouse pad */
+      .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: central;
+      }
