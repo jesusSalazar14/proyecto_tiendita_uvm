@@ -1,0 +1,234 @@
+/* GORRAS 1*/
+body {
+font-family: "Alkatra", display;
+ }
+ header, footer {
+font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+ }
+ .color-option {
+display: inline-block;
+ margin: 10px;
+ width: 30px;
+ height: 30px;
+border-radius: 50%;
+ }
+ .color-option.black {
+background-color: black;
+ }
+  
+/* LAZOS 2*/
+ .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-rgb {
+    background-color: rgb(122, 18, 63);
+  }
+  .dot-pink {
+    background-color: pink;
+  }
+  .dot-black {
+    background-color: black;
+  }
+
+  /* HEADBAND 3*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: central;
+  }
+  
+  .dot-pink {
+  background-color: pink;
+  }
+  .dot-black {
+    background-color: black;
+  }
+
+  /* LANYERS 4*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: central;
+  
+  }
+  .dot-black {
+    background-color: black;
+
+  }   
+
+  /* MINI LANYERS 5*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: central;
+  }
+  
+  .dot-black {
+    background-color: black;
+  }
+
+  /* POSA VASOS 7*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: central;
+  }
+  
+  .dot-black {
+    background-color: black;
+  }
+
+  /* TAPA SILICONA 9*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: central;
+  }
+
+  .green {
+background-color: green;
+  }
+
+  /* CARTUCHERA 10*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .gray {
+    background-color: gray;
+  }
+
+  /* ECOLOGICA 11*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: central;
+  }
+  
+  .dot-black {
+    background-color: black;
+}
+
+/* LLAVERO 12*/
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  /* BOL.ACRILICO 13*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .turquoise {
+  background-color: turquoise;
+  }
+  
+  .pink {
+    background-color: pink;
+  }
+
+  .beige {
+    background-color: beige;
+  }
+
+  /* MARC.ACRILICO 14*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .turquoise {
+    background-color: turquoise;
+  }
+
+  .pink {
+    background-color: pink;
+  }
+
+  .beige {
+    background-color: beige;
+  }
+
+  /* SOPORT.ACRILICO 15*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  /* RETRA.ACRILICO 16*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .turquoise {
+    background-color: turquoise;
+  }
+
+  .pink {
+    background-color: pink;
+  }
+
+  .beige {
+    background-color: beige;
+  }
+
+  /* CORAZ.ACRILICO 17*/
+  .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .beige {
+    background-color: #f5f5dc;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-around;
+    
+}
+
+.product-item {
+    width: 32%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 1vw;
+    border-radius: 10px;
+    text-align: center;
+  }
