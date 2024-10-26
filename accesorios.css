@@ -1,0 +1,148 @@
+body {
+    font-family: "Alkatra", display;
+     }
+     header, footer {
+    font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
+     }
+     .color-option {
+    display: inline-block;
+     margin: 10px;
+     width: 30px;
+     height: 30px;
+    border-radius: 50%;
+     }  
+  
+   /* Pulseras */
+     .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .dot-green {
+        background-color: green;
+      }
+      .dot-pink {
+        background-color: pink;
+      }
+      .dot-purple {
+        background-color: purple;
+      }
+    
+  /*Lanyards*/
+      .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: central;
+      }
+      
+      .dot-black {
+        background-color: black;
+      }
+      .dot-green {
+        background-color: green;
+      }
+      .dot-white {
+        background-color: gainsboro;
+      }
+    
+  /*Mini Lanyards*/
+      .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: central;
+      }
+      
+      .dot-black {
+        background-color: black;
+      }
+      .dot-green {
+        background-color: green;
+      }
+      .dot-white {
+        background-color: gainsboro;
+      }
+    
+  /* Llavero */
+    .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    
+      .blue {
+        background-color: blue;
+      }
+     
+  /*Retrato Rectangular*/ 
+      .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    
+      .turquoise {
+        background-color: turquoise;
+      }
+    
+      .pink {
+        background-color: pink;
+      }
+    
+      .beige {
+        background-color: beige;
+      }
+  
+    /*Marca Libros*/
+      .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    
+      .turquoise {
+        background-color: turquoise;
+      }
+    
+      .pink {
+        background-color: pink;
+      }
+    
+      .beige {
+        background-color: beige;
+      }
+  
+    /*Retrato de corazon*/
+      .dot {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    
+      .beige {
+        background-color: #f5f5dc;
+      }
+    
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vw;
+        justify-content: space-around;
+        
+    }
+    
+    .product-item {
+        width: 32%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        padding: 1vw;
+        border-radius: 10px;
+        text-align: center;
+      }
+  
