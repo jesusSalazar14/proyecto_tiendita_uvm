@@ -8,9 +8,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('/img/fondo-login.jpg'); /* Cambia esta ruta a tu imagen */
-            background-size: cover; /* Para cubrir toda la pantalla */
-            background-position: center; /* Centra la imagen */
+            background-image: url('/img/fondo-login.jpg'); 
+            background-size: cover; 
+            background-position: center; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,23 +29,23 @@
         }
         .form-group {
             margin-bottom: 15px;
-            display: flex; /* Mantener display flex para centrar los elementos */
-            flex-direction: column; /* Establecer la dirección de los elementos */
-            align-items: center; /* Centramos las barras de entrada */
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
         }
         label {
             display: block;
             margin-bottom: 5px;
-            text-align: left; /* Alinear el texto del label a la izquierda */
-            width: 85%; /* Para que el label ocupe todo el ancho */
+            text-align: left; 
+            width: 85%; 
         }
         input[type="text"],
         input[type="password"] {
-            width: 80%; /* Ancho del input */
+            width: 80%; 
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin: 0 auto; /* Centramos el input */
+            margin: 0 auto; 
         }
         button {
             width: 100%;
@@ -55,23 +55,23 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            margin-top: 10px; /* Margen superior para separar del input */
+            margin-top: 10px; 
         }
         button:hover {
             background-color: #4cae4c;
         }
         .btn-inicio {
-            background-color: #007bff; /* Color del botón de inicio */
-            margin-top: 10px; /* Margen superior para separar del botón de entrada */
+            background-color: #007bff; 
+            margin-top: 10px; 
         }
         .btn-inicio:hover {
-            background-color: #0056b3; /* Color al pasar el mouse */
+            background-color: #0056b3; 
         }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>Iniciar Sesion</h2>
+        <h2>Iniciar Sesion de Administrador</h2>
         <form action="/admin/login" method="POST">
             <div class="form-group">
                 <label for="username">Nombre de Usuario</label>

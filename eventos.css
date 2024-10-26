@@ -12,6 +12,39 @@
     color: #ffffff;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        visibility: hidden; 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+.Size1 {
+    font-size: 43px;
+    font-weight: bold;
+    color: #77CE79;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0; 
+    visibility: hidden;
+    animation-delay: 0.2s; /* Delay for Size1 */
+}
+
+.Size2 {
+    font-size: 39px;
+    font-weight: lighter;
+    color: #ffffff;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0; 
+    visibility: hidden;
+    animation-delay: 0.6s; /* Delay for Size2 */
+}
+
 .Marco1 {
     background-image: url('img/rectangulo.png');
     background-size: contain;

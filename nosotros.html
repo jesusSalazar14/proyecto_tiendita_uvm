@@ -14,50 +14,105 @@
             <div class="logo">
                 <img src="/img/logo.png" alt="Logo de la tienda" />
             </div>
-            <div class="social-links">
-                <a href="https://www.instagram.com/latienditauvm/" class="btn-social-link">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <p>@latienditauvm</p>
-            </div>
-            <div class="content-info">
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +58 412-1988407
-                </p>
-                <p>
-                    <i class="fa-regular fa-envelope"></i>
-                    tiendauvm@uvm.edu.ve
-                </p>
-            </div>
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Buscar...">
-                <button class="button-header">
+                <button class="button-header" id="search-button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+                <input type="text" class="search-input" placeholder="Buscar...">
             </div>
+            <a>
                 <button class="button-header">
-                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                 </button>
+            </a>
+            <a href="/login.html" style="color: white; text-decoration: none;">
                 <button class="button-header">
-                    <a href="/login.html"><i class="fa-regular fa-user"></i></a>
+                    <i class="fa-regular fa-user"></i>
                 </button>
-            </div>       
+            </a>
+            <a href="/carrito.html" style="color: white; text-decoration: none;">
+                <button class="button-header">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </button>
+            </a>
+        </div>
     </div>
-        <header>
-            <div class="container section-logo">
-                <nav>
-                    <a href="/index.html">Inicio</a>
-                    <a href="/nosotros.html">Sobre Nosotros</a>
-                    <a href="/ropa.html">Ropa Personalizada</a>
-                    <a href="/accesorios.html">Accesorios Personalizados</a>
-                    <a href="/papeleria.html">Papelería Creativa</a>
-                    <a href="/regalos.html">Regalos Personalizados</a>
-                    <a href="/eventos.html">Organización de Eventos</a>
-                </nav>
-                    
-        </header>
-    <section class="section-hero container">
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const searchButton = document.getElementById('search-button');
+    const searchInput = document.querySelector('.search-input');
+    const announcementBarContent = document.querySelector('.announcement-bar-content');
+
+    searchButton.addEventListener('click', function() {
+        searchInput.classList.toggle('active'); // Alterna la clase 'active' en la barra de búsqueda
+        
+        // Alterna la visibilidad de los demás elementos
+        if (searchInput.classList.contains('active')) {
+            // Si la barra de búsqueda está activa, oculta los demás elementos
+            announcementBarContent.querySelectorAll('.button-header:not(#search-button)').forEach(button => {
+                button.classList.add('hidden');
+            });
+        } else {
+            // Si la barra de búsqueda no está activa, muestra los demás elementos
+            announcementBarContent.querySelectorAll('.button-header:not(#search-button)').forEach(button => {
+                button.classList.remove('hidden');
+            });
+        }
+    });
+});
+</script>
+    
+
+<header>
+    <div class="container section-logo">
+        <nav class="nav">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <div class="menu">
+                <a href="/index.html">Inicio</a>
+                <a href="/nosotros.html" class="active">Nosotros</a> 
+                <a href="/ropa.html">Ropa</a>
+                <a href="/accesorios.html">Accesorios</a>
+                <a href="/papeleria.html">Papelería</a>
+                <a href="/regalos.html">Regalos</a>
+                <a href="/eventos.html">Eventos</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+    const menu = document.querySelector('.menu');
+
+    // Cambiar el estilo de display del menú
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none'; // Ocultar menú
+    } else {
+        menu.style.display = 'flex'; // Mostrar menú
+    }
+});
+
+// Opcional: Asegurarte de que el menú esté oculto al cargar la página en pantallas pequeñas
+window.addEventListener('load', function() {
+    const menu = document.querySelector('.menu');
+    if (window.innerWidth < 600) {
+        menu.style.display = 'none'; // Asegurarse de que el menú esté oculto
+    }
+});
+
+// Opcional: Asegurarte de que el menú se oculte si se redimensiona la ventana
+window.addEventListener('resize', function() {
+    const menu = document.querySelector('.menu');
+    if (window.innerWidth >= 600) {
+        menu.style.display = 'flex'; // Mostrar menú en pantallas grandes
+    } else {
+        menu.style.display = 'none'; // Ocultar menú en pantallas pequeñas
+    }
+});
+</script>
+
+
+    <section class="section-hero nosotros">
         <div class="info">
             <h1>La Tiendita UVM</h1>
             <p>𝑼𝒏 𝒕𝒐𝒒𝒖𝒆 𝑼𝑽𝑴 𝒆𝒏 𝒄𝒂𝒅𝒂 𝒅𝒆𝒕𝒂𝒍𝒍𝒆...</p>
@@ -115,34 +170,43 @@
     </style>
 
     <div class="scroll-container">
-                <div class="child"><img class="child-img" src="img/nosostros1.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/nosostros2.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/nosostros3.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/nosostros4.jpg" alt="image"></div>
-                <div class="child"><img class="child-img" src="img/nosostros7.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (30).jpg " alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (3).jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (12).jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (1).jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (14).jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (13).jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (4).jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/IMAGENES EVENTOS/Parte 3 (6).jpg" alt="image"></div>
             </div>
         </div>
     </div>
 
     <script>
-
         const content = document.querySelector(".scroll-container");
-
-        content.addEventListener("mousemove", (e) => {
-            const rect = content.getBoundingClientRect();
-            const scrollSpeed = 500;
-
-            if (e.clientX < rect.left + 100) {
-                content.scrollLeft -= scrollSpeed;
-            } else if (e.clientX > rect.right - 100) {
-                content.scrollLeft += scrollSpeed;
+        const scrollSpeed = 500; 
+        const scrollAmount = 600; 
+        let direction = 1; 
+    
+        // Función para mover el contenido
+        function scroll() {
+            content.scrollLeft += scrollAmount * direction;
+    
+            // Verificar si hemos llegado al final o al inicio
+            if (content.scrollLeft >= content.scrollWidth - content.clientWidth) {
+                direction = -1; // Cambiar dirección a izquierda
+            } else if (content.scrollLeft <= 0) {
+                direction = 1; // Cambiar dirección a derecha
             }
-        });
+        }
+    
+        // Iniciar el carrusel
+        let scrollInterval = setInterval(scroll, 2000); 
     </script>
     
-    <section class="section-hero container">
+    <section class="section-hero nosotros">
         <div class="info">
-            <h1>MISIÓN:</h1>
+            <h1>MISIÓN</h1>
             <p>Satisfacer las necesidades de nuestros clientes,
                 brindando soluciones creativas y originales que resalten la
                 identidad y esencia de cada marca. Trabajamos con
@@ -151,9 +215,9 @@
                 cada uno de nuestros productos</p>
         </div>
     </section>
-    <section class="section-hero container">
+    <section class="section-hero nosotros">
         <div class="info">
-            <h1>VISIÓN:</h1>
+            <h1>VISIÓN</h1>
             <p>Ser referencia indiscutible en el mercado de
                 elaboración y producción de material POP, detalles y
                 accesorios; reconocidos por la excelencia en la
@@ -164,23 +228,47 @@
                 clientes y del mercado en general</p>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
         <div class="announcement-bar custom-bar-width">
-            <div class="content-info custom-content-info">
+            <div class="footer-container"> 
                 <p>
                     <i class="fa-solid fa-phone"></i>
                     +58 412-1988407
                 </p>
                 <p>
-                    &copy;2024 La Tiendita UVM. Todos los derechos reservados.
-                </p>
-                <p>
                     <i class="fa-regular fa-envelope"></i>
                     tiendauvm@uvm.edu.ve
                 </p>
-
+                <div class="social-links">
+                    <a href="https://www.instagram.com/latienditauvm/" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        @latienditauvm
+                    </a>
+                </div>
+                <p>
+                    &copy;2024 La Tiendita UVM. Todos los derechos reservados.
+                </p>
+                
             </div>   
         </div>
     </footer>
+    <script>
+        window.addEventListener('resize', function() {
+        const copyrightParagraph = document.querySelector('footer p:last-child'); 
+        if (window.innerWidth < 582) {
+            if (copyrightParagraph) {
+                copyrightParagraph.textContent = "©2024 La Tiendita UVM."; 
+            }
+        } else {
+            if (copyrightParagraph) {
+                copyrightParagraph.textContent = "©2024 La Tiendita UVM. Todos los derechos reservados."; 
+            }
+        }
+    });
+    </script>
 </body>
 </html>
