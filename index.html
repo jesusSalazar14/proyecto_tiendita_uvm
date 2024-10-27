@@ -4,198 +4,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Tiendita UVM</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 <body>
+
+<!---
+
+        >>HEADER PRINCIPAL<<
+
+--->
     <div class="announcement-bar">
         <div class="announcement-bar-content container">
             <div class="logo">
                 <img src="/img/logo.png" alt="Logo de la tienda" />
             </div>
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Buscar...">
-                <button class="button-header">
+                <button class="button-header" id="search-button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+                <input type="text" class="search-input" placeholder="Buscar...">
             </div>
-            <button class="button-header">
-                <i class="fa-regular fa-bell"></i>
-            </button>
-            <button class="button-header">
-                <a href="/login.html" style="color: white; text-decoration: none;">
+            <a>
+                <button class="button-header">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </a>
+            <a href="/login.html" style="color: white; text-decoration: none;">
+                <button class="button-header">
                     <i class="fa-regular fa-user"></i>
-                    Iniciar Sesión
-                </a>
-            </button>
-            <button class="button-header">
-                <a href="/carrito.html" style="color: white; text-decoration: none;">
+                </button>
+            </a>
+            <a href="/carrito.html" style="color: white; text-decoration: none;">
+                <button class="button-header">
                     <i class="fa-solid fa-shopping-cart"></i>
-                    Carrito
-                </a>
-            </button>
-            </div>
+                </button>
+            </a>
+        </div>
     </div>
-    
-    <header>
-        <div class="container section-logo">
-            <button class="menu-toggle">☰</button>
-            <nav class="nav">
+
+
+
+
+<!---
+
+        >>HEADER SECUNDARIO<<
+
+--->
+<header>
+    <div class="container section-logo">
+        <nav class="nav">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <div class="menu">
                 <a href="/index.html">Inicio</a>
-                <a href="/nosotros.html">Nosotros</a>
-                <a href="/ropa.html">Ropa </a>
+                <a href="/nosotros.html">Nosotros</a> 
+                <a href="/ropa.html">Ropa</a>
                 <a href="/accesorios.html">Accesorios</a>
-                <a href="/papeleria.html">Papelería </a>
-                <a href="/regalos.html">Regalos </a>
+                <a href="/papeleria.html">Papelería</a>
+                <a href="/regalos.html">Regalos</a>
                 <a href="/eventos.html">Eventos</a>
-            </nav>
-        </div>
-    </header>
-    
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const nav = document.querySelector('.nav');
-    nav.classList.remove('active'); // Remueve la clase 'active' por defecto
-});
-
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active'); // Alterna la clase 'active'
-    console.log('Menu toggled. Active class present:', nav.classList.contains('active'));
-});
-    </script>
-
-    <section class="section-hero container">
-        <div class="info">
-            <h1>Camisas, <span>accesorios</span> y mucho más lo encuentras aquí.</h1>
-            <br>
-            <p>Compra los mejores productos y material POP en nuestra tienda.</p>
-        </div>
-    </section>
-
-    <style>
-        .main-scroll-div {
-            display: flex;
-            align-items: center;
-        }
-        .cover {
-            overflow-x: auto;
-            white-space: nowrap;
-            width: 320%;
-            border: 2px solid #ccc;
-            padding: 10px;
-            background-color: #fff;
-        }
-        .scroll-images {
-            display: inline-flex;
-        }
-        .child {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .child-img {
-            width: 400px;
-            height: 400px;
-            object-fit: cover;    
-        }
-        .icon {
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-        .scroll-container {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-        }
-
-        .scroll-container::-webkit-scrollbar {
-            display: none;
-        }
-
-        .scroll-card {
-            flex: 0 0 auto;
-            width: 350px;
-            height: 600px;
-            text-align: center;
-        }
-
-    </style>
-
-    <div class="scroll-container">
-        <div class="scroll-card"><img class="child-img" src="img/boligrafosdef.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/cartucheradef.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/fcaballero.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/gorrasdef.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/retratocoradef.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/tazasdef.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/fdama.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/LAZOSDEF.jpg" alt="image"></div>
+            </div>
+        </nav>
     </div>
+</header>
 
-    <script>
-        const content = document.querySelector(".scroll-container");
-        const scrollSpeed = 500; // Velocidad de desplazamiento
-        const scrollAmount = 600; // Cantidad de desplazamiento en cada intervalo
-        let direction = 1; // 1 para derecha, -1 para izquierda
-    
-        // Función para mover el contenido
-        function scroll() {
-            content.scrollLeft += scrollAmount * direction;
-    
-            // Verificar si hemos llegado al final o al inicio
-            if (content.scrollLeft >= content.scrollWidth - content.clientWidth) {
-                direction = -1; // Cambiar dirección a izquierda
-            } else if (content.scrollLeft <= 0) {
-                direction = 1; // Cambiar dirección a derecha
-            }
-        }
-    
-        // Iniciar el carrusel
-        let scrollInterval = setInterval(scroll, 2000); // Cambia la imagen cada 1 segundo
-    
-        // Opcional: Pausar el carrusel al pasar el mouse sobre el contenedor
-        content.addEventListener("mouseenter", () => {
-            clearInterval(scrollInterval);
-        });
-    
-        content.addEventListener("mouseleave", () => {
-            scrollInterval = setInterval(scroll, 2000);
-        });
-    </script>
 
+
+<!---
+
+        >>CAMISAS ACCSEROIOS Y MAS<<
+
+--->
+<section class="section-hero container">
+    <div class="info">
+        <h1>Camisas, <span>accesorios</span> y mucho más lo encuentras aquí.</h1>
+        <br>
+        <p>Compra los mejores productos y material POP en nuestra tienda.</p>
+    </div>
+</section>
+
+
+
+
+<!---
+
+        >>CARRUSEL<<
+
+--->
+
+<style>
+    .main-scroll-div {
+    display: flex;
+    align-items: center;
+}
+.cover {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 320%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+.scroll-images {
+    display: inline-flex;
+}
+.child {
+    display: inline-block;
+    margin-right: 10px;
+}
+.child-img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;    
+}
+.icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    will-change: scroll-position;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 520px;
+    text-align: center;
+}
+</style>
+
+
+<div class="scroll-container">
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/tipogorra.jpg" alt="Gorra" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/faneASVR.jpg" alt="Fane ASVR" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/lazosbla.jpg" alt="Lazos" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/sobreblanco.jpg" alt="Sobre Blanco" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/sofia.jpg" alt="Sofía" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/camisapolar.jpg" alt="Camisa Polar" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/detallenegro.jpg" alt="Detalle Negro" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/girlrosa.jpg" alt="Girl Rosa" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/bolsasverdes.jpg" alt="Bolsas Verdes" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/joaquincumple.jpg" alt="Joaquín Cumple" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/detallerosa.jpg" alt="Detalle Rosa" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/gorrasvarias.jpg" alt="Gorras Varias" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/rosa.jpg" alt="Rosa" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/uvmnegro.jpg" alt="UVM Negro" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/llaverorosaa.jpg" alt="Llave Rosa" width="400" height="450" loading="lazy">
+    </div>
+</div>
+
+
+
+
+<!---
+
+        >>CATEGORIAS<<
+
+--->
 <section class="section-categories container">
     <h2>Explora nuestros productos</h2>
 
     <div class="container-card-categories">
         <div class="card-category">
             <div class="img-category">
-                <img src="img/fcaballero.jpg" alt="Category 1">
+                <a href="/ropa.html">
+                    <img src="img/imagenes inicio/girlrosa.jpg" alt="Category 1">
+                </a>
             </div>
             <h3><a href="/ropa.html" class="boton">Ropa personalizada</a></h3>
         </div>
         <div class="card-category">
             <div class="img-category">
-                <img src="img/LAZOSDEF.jpg" alt="Category 2">
+                <a href="/accesorios.html">
+                    <img src="img/imagenes inicio/lazosbla.jpg" alt="Category 2">
+                </a>
             </div>
             <h3><a href="/accesorios.html" class="boton">Accesorios Personalizados</a></h3>
         </div>
         <div class="card-category">
             <div class="img-category">
-                <img src="img/boligrafosdef.jpg" alt="Category 3">
+                <a href="/papeleria.html">
+                    <img src="img/imagenes inicio/bolsasverdes.jpg" alt="Category 3">
+                </a>
             </div>
             <h3><a href="/papeleria.html" class="boton">Papelería Creativa</a></h3>
         </div>
         <div class="card-category">
             <div class="img-category">
-                <img src="img/porcosmedef.jpg" alt="Category 4">
+                <a href="/regalos.html">
+                    <img src="img/imagenes inicio/rosa.jpg" alt="Category 4">
+                </a>
             </div>
             <h3><a href="/regalos.html" class="boton">Regalos Personalizados</a></h3>
         </div>
         <div class="card-category">
             <div class="img-category">
-                <img src="img/nosostros7.jpg" alt="Category 4">
+                <a href="/eventos.html">
+                    <img src="img/IMAGENES EVENTOS/Parte 3 (23).jpg" alt="Category 5">
+                </a>
             </div>
             <h3><a href="/eventos.html" class="boton">Organización de eventos</a></h3>
         </div>
@@ -204,8 +249,13 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
 <br>
 <br>
 <br>
-<br>
 
+
+<!---
+
+        >>FOOTER<<
+
+--->
 <footer>
     <div class="announcement-bar custom-bar-width">
         <div class="footer-container"> 
@@ -224,27 +274,12 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
                 </a>
             </div>
             <p>
-                &copy;2024 La Tiendita UVM. Todos los derechos reservados.
+                &copy;2024 La Tiendita UVM.
             </p>
             
         </div>   
     </div>
 </footer>
-
-<script>
-    window.addEventListener('resize', function() {
-    const copyrightParagraph = document.querySelector('footer p:last-child'); // Selecciona el último párrafo en el footer
-    if (window.innerWidth < 582) {
-        if (copyrightParagraph) {
-            copyrightParagraph.textContent = "©2024 La Tiendita UVM."; // Cambia el contenido del párrafo
-        }
-    } else {
-        if (copyrightParagraph) {
-            copyrightParagraph.textContent = "©2024 La Tiendita UVM. Todos los derechos reservados."; // Restaura el contenido original si el tamaño de la ventana es mayor a 582px
-        }
-    }
-});
-</script>
-
+<script src="index.js" defer></script>
 </body>
 </html>
