@@ -30,7 +30,7 @@
 }
 
 .Fondo1{
-    background-image: url('img/Fondo4.avif');
+    background-image: url('img/Fondo\ 1.png');
     position: fixed; 
     top: 0; 
     left: 0;
@@ -90,13 +90,14 @@
 
 .Subfondo2{
     position: relative; 
-    top: 560px; 
+    top: 480px; 
     left: 50%; 
     width: cover; 
-    min-height: 1000px;
+    height: 600px;
     background-color: #34422b;
     transform: translate(-50%, -50%); 
     z-index: -1; 
+    margin-bottom: 100px;
 }
 
 .Segundafila{
@@ -105,12 +106,12 @@
 
 .Imagendelista2 img {
     margin-top: 70px;
-    flex: 0 0 50%;
+    flex: 0 0 30%;
     width: 50%; 
-    height: 100%; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
     margin-right: 250px;
     margin-left: 210px;
+    
     
 }
 
@@ -118,11 +119,10 @@
     margin-top: 70px;
     background-color: #D9D9D9;
     flex: 0 0 30%;
-    width: 40%; 
     padding: 20px; 
-    margin-left: 250px;
+    margin-left: 260px;
     border: 1px solid #ccc; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
     color: #34422b ;
     font-size: 40px;
     line-height: 2;
