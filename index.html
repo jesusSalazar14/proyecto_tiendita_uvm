@@ -4,10 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Tiendita UVM</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 <body>
+
+<!---
+
+        >>HEADER PRINCIPAL<<
+
+--->
     <div class="announcement-bar">
         <div class="announcement-bar-content container">
             <div class="logo">
@@ -36,33 +43,15 @@
             </a>
         </div>
     </div>
-<script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-    const searchButton = document.getElementById('search-button');
-    const searchInput = document.querySelector('.search-input');
-    const announcementBarContent = document.querySelector('.announcement-bar-content');
-
-    searchButton.addEventListener('click', function() {
-        searchInput.classList.toggle('active'); // Alterna la clase 'active' en la barra de búsqueda
-        
-        // Alterna la visibilidad de los demás elementos
-        if (searchInput.classList.contains('active')) {
-            // Si la barra de búsqueda está activa, oculta los demás elementos
-            announcementBarContent.querySelectorAll('.button-header:not(#search-button)').forEach(button => {
-                button.classList.add('hidden');
-            });
-        } else {
-            // Si la barra de búsqueda no está activa, muestra los demás elementos
-            announcementBarContent.querySelectorAll('.button-header:not(#search-button)').forEach(button => {
-                button.classList.remove('hidden');
-            });
-        }
-    });
-});
-</script>
 
 
+
+
+<!---
+
+        >>HEADER SECUNDARIO<<
+
+--->
 <header>
     <div class="container section-logo">
         <nav class="nav">
@@ -79,38 +68,14 @@
         </nav>
     </div>
 </header>
-<script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-    const menu = document.querySelector('.menu');
-
-    // Cambiar el estilo de display del menú
-    if (menu.style.display === 'flex') {
-        menu.style.display = 'none'; // Ocultar menú
-    } else {
-        menu.style.display = 'flex'; // Mostrar menú
-    }
-});
-
-// Opcional: Asegurarte de que el menú esté oculto al cargar la página en pantallas pequeñas
-window.addEventListener('load', function() {
-    const menu = document.querySelector('.menu');
-    if (window.innerWidth < 600) {
-        menu.style.display = 'none'; // Asegurarse de que el menú esté oculto
-    }
-});
-
-// Opcional: Asegurarte de que el menú se oculte si se redimensiona la ventana
-window.addEventListener('resize', function() {
-    const menu = document.querySelector('.menu');
-    if (window.innerWidth >= 600) {
-        menu.style.display = 'flex'; // Mostrar menú en pantallas grandes
-    } else {
-        menu.style.display = 'none'; // Ocultar menú en pantallas pequeñas
-    }
-});
-</script>
 
 
+
+<!---
+
+        >>CAMISAS ACCSEROIOS Y MAS<<
+
+--->
 <section class="section-hero container">
     <div class="info">
         <h1>Camisas, <span>accesorios</span> y mucho más lo encuentras aquí.</h1>
@@ -120,115 +85,121 @@ window.addEventListener('resize', function() {
 </section>
 
 
-    <style>
-        .main-scroll-div {
-            display: flex;
-            align-items: center;
-        }
-        .cover {
-            overflow-x: auto;
-            white-space: nowrap;
-            width: 320%;
-            border: 2px solid #ccc;
-            padding: 10px;
-            background-color: #fff;
-        }
-        .scroll-images {
-            display: inline-flex;
-        }
-        .child {
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .child-img {
-            width: 400px;
-            height: 450px;
-            object-fit: cover;    
-        }
-        .icon {
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-        .scroll-container {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-        }
 
-        .scroll-container::-webkit-scrollbar {
-            display: none;
-        }
 
-        .scroll-card {
-            flex: 0 0 auto;
-            width: 350px;
-            height: 520px;
-            text-align: center;
-        }
+<!---
 
+        >>CARRUSEL<<
+
+--->
+
+<style>
+    .main-scroll-div {
+    display: flex;
+    align-items: center;
+}
+.cover {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 320%;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+.scroll-images {
+    display: inline-flex;
+}
+.child {
+    display: inline-block;
+    margin-right: 10px;
+}
+.child-img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;    
+}
+.icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    will-change: scroll-position;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 520px;
+    text-align: center;
+}
 </style>
 
-    <div class="scroll-container">
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/tipogorra.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/faneASVR.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/lazosbla.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/sobreblanco.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/sofia.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/camisapolar.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/detallenegro.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/girlrosa.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/bolsasverdes.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/joaquincumple.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/detallerosa.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/gorrasvarias.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/rosa.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/uvmnegro.jpg" alt="image"></div>
-        <div class="scroll-card"><img class="child-img" src="img/imagenes inicio/llaverorosaa.jpg" alt="image"></div>
+
+<div class="scroll-container">
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/tipogorra.jpg" alt="Gorra" width="400" height="450" loading="lazy">
     </div>
-    <script>
-        const content = document.querySelector(".scroll-container");
-        let scrollSpeed = 500; // Velocidad de desplazamiento (en milisegundos)
-        let scrollAmount = 600; // Cantidad de desplazamiento en cada intervalo
-        let direction = 1; // 1 para derecha, -1 para izquierda
-    
-        // Función para mover el contenido
-        function scroll() {
-            content.scrollLeft += scrollAmount * direction;
-    
-            // Verificar si hemos llegado al final o al inicio
-            if (content.scrollLeft >= content.scrollWidth - content.clientWidth) {
-                direction = -1; // Cambiar dirección a izquierda
-            } else if (content.scrollLeft <= 0) {
-                direction = 1; // Cambiar dirección a derecha
-            }
-        }
-    
-        // Función para ajustar el scrollAmount y la velocidad según el tamaño de la ventana
-        function adjustScrollAmount() {
-            if (window.innerWidth < 700) {
-                scrollAmount = 320; // Menor desplazamiento en pantallas pequeñas
-                scrollSpeed = 3000; // Mayor velocidad en pantallas pequeñas
-            } else {
-                scrollAmount = 400; // Desplazamiento normal en pantallas grandes
-                scrollSpeed = 2000; // Velocidad normal en pantallas grandes
-            }
-    
-            // Reiniciar el intervalo con la nueva velocidad
-            clearInterval(scrollInterval);
-            scrollInterval = setInterval(scroll, scrollSpeed);
-        }
-    
-        // Iniciar el carrusel
-        let scrollInterval = setInterval(scroll, scrollSpeed); // Cambia la imagen según la velocidad inicial
-    
-        // Ajustar el scrollAmount y la velocidad al cargar y al redimensionar la ventana
-        window.addEventListener('load', adjustScrollAmount);
-        window.addEventListener('resize', adjustScrollAmount);
-    </script>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/faneASVR.jpg" alt="Fane ASVR" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/lazosbla.jpg" alt="Lazos" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/sobreblanco.jpg" alt="Sobre Blanco" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/sofia.jpg" alt="Sofía" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/camisapolar.jpg" alt="Camisa Polar" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/detallenegro.jpg" alt="Detalle Negro" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/girlrosa.jpg" alt="Girl Rosa" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/bolsasverdes.jpg" alt="Bolsas Verdes" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/joaquincumple.jpg" alt="Joaquín Cumple" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/detallerosa.jpg" alt="Detalle Rosa" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/gorrasvarias.jpg" alt="Gorras Varias" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/rosa.jpg" alt="Rosa" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/uvmnegro.jpg" alt="UVM Negro" width="400" height="450" loading="lazy">
+    </div>
+    <div class="scroll-card">
+        <img class="child-img" src="img/imagenes inicio/llaverorosaa.jpg" alt="Llave Rosa" width="400" height="450" loading="lazy">
+    </div>
+</div>
 
 
+
+
+<!---
+
+        >>CATEGORIAS<<
+
+--->
 <section class="section-categories container">
     <h2>Explora nuestros productos</h2>
 
@@ -278,6 +249,13 @@ window.addEventListener('resize', function() {
 <br>
 <br>
 <br>
+
+
+<!---
+
+        >>FOOTER<<
+
+--->
 <footer>
     <div class="announcement-bar custom-bar-width">
         <div class="footer-container"> 
@@ -302,6 +280,6 @@ window.addEventListener('resize', function() {
         </div>   
     </div>
 </footer>
-
+<script src="index.js" defer></script>
 </body>
 </html>
