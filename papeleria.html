@@ -68,7 +68,6 @@
 });
 </script>
 
-
 <header>
     <div class="container section-logo">
         <nav class="nav">
@@ -91,27 +90,27 @@
 
     // Cambiar el estilo de display del menú
     if (menu.style.display === 'flex') {
-        menu.style.display = 'none'; // Ocultar menú
+        menu.style.display = 'none'; 
     } else {
-        menu.style.display = 'flex'; // Mostrar menú
+        menu.style.display = 'flex'; 
     }
 });
 
-// Opcional: Asegurarte de que el menú esté oculto al cargar la página en pantallas pequeñas
+
 window.addEventListener('load', function() {
     const menu = document.querySelector('.menu');
     if (window.innerWidth < 600) {
-        menu.style.display = 'none'; // Asegurarse de que el menú esté oculto
+        menu.style.display = 'none'; 
     }
 });
 
-// Opcional: Asegurarte de que el menú se oculte si se redimensiona la ventana
+
 window.addEventListener('resize', function() {
     const menu = document.querySelector('.menu');
     if (window.innerWidth >= 600) {
-        menu.style.display = 'flex'; // Mostrar menú en pantallas grandes
+        menu.style.display = 'flex'; 
     } else {
-        menu.style.display = 'none'; // Ocultar menú en pantallas pequeñas
+        menu.style.display = 'none'; 
     }
 });
 </script>
@@ -129,7 +128,8 @@ window.addEventListener('resize', function() {
                         Precio: 5$
                     </p>
                     <br>
-                    <button class="btn-add-cart">Añadir al carrito</button>
+                    <title>Carrito Button</title>
+                    <button class="button">Añadir al carrito</button>
                 </div>
 
                 <div class="product-item">
@@ -143,7 +143,8 @@ window.addEventListener('resize', function() {
                         Precio: 2$
                     </p>
                     <br>
-                    <button class="btn-add-cart">Añadir al carrito</button>
+                    <title>Carrito Button</title>
+                    <button class="button">Añadir al carrito</button>
                 </div>
 
                 <div class="product-item">
@@ -157,13 +158,10 @@ window.addEventListener('resize', function() {
                         Precio: 3$
                     </p>
                     <br>
-                    <button class="btn-add-cart">Añadir al carrito</button>
+                    <title>Carrito Button</title>
+                    <button class="button">Añadir al carrito</button>
                 </div>
         </section>
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
         <br>
         <br>

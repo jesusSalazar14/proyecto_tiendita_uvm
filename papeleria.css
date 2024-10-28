@@ -1,36 +1,95 @@
 body {
-    font-family: "Alkatra", display;
-     }
-     header, footer {
-    font-family: "Alkatra", display; /* Tipo de letra específico para header, footer y announcement-bar */
-     }
-     .color-option {
-    display: inline-block;
-     margin: 10px;
-     width: 30px;
-     height: 30px;
-    border-radius: 50%;
-     }   
-     
-     /*Agenda*/
-     .dot {
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
-        display: central;
-      }
+  font-family: "Alkatra", display;
+}
+header, footer {
+  font-family: "Alkatra", display;
+}
+.color-option {
+  display: inline-block;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 
-      /*Calendario*/
-      .dot {
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
-        display: central;
-      }
-      /*Mouse pad */
-      .dot {
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
-        display: central;
-      }
+.dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-green { background-color: green; }
+.dot-pink { background-color: pink; }
+.dot-purple { background-color: purple; }
+.dot-black { background-color: black; }
+.blue { background-color: blue; }
+.turquoise { background-color: turquoise; }
+.pink { background-color: pink; }
+.beige { background-color: #f5f5dc; }
+
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-around;
+  padding: 1vw;
+}
+
+.product-item {
+  width: 100%;
+  max-width: 30%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 2%;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.button {
+  background-color: #88bd2d;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .product-item {
+    max-width: 45%;
+  }
+  .button {
+    font-size: 0.9em;
+    padding: 0.9em 1.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    max-width: 48%;
+  }
+  .button {
+    font-size: 0.8em;
+    padding: 0.8em 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-container {
+    gap: 4%;
+  }
+  .product-item {
+    max-width: 100%;
+  }
+  .button {
+    font-size: 0.75em;
+    padding: 0.7em 1.4em;
+  }
+}
