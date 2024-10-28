@@ -51,7 +51,7 @@
     const announcementBarContent = document.querySelector('.announcement-bar-content');
 
     searchButton.addEventListener('click', function() {
-        searchInput.classList.toggle('active'); // Alterna la clase 'active' en la barra de búsqueda
+        searchInput.classList.toggle('active'); 
         
         // Alterna la visibilidad de los demás elementos
         if (searchInput.classList.contains('active')) {
@@ -68,7 +68,6 @@
     });
 });
 </script>
-
 
 <header>
     <div class="container section-logo">
@@ -92,27 +91,27 @@
 
     // Cambiar el estilo de display del menú
     if (menu.style.display === 'flex') {
-        menu.style.display = 'none'; // Ocultar menú
+        menu.style.display = 'none'; 
     } else {
-        menu.style.display = 'flex'; // Mostrar menú
+        menu.style.display = 'flex'; 
     }
 });
 
-// Opcional: Asegurarte de que el menú esté oculto al cargar la página en pantallas pequeñas
+
 window.addEventListener('load', function() {
     const menu = document.querySelector('.menu');
     if (window.innerWidth < 600) {
-        menu.style.display = 'none'; // Asegurarse de que el menú esté oculto
+        menu.style.display = 'none'; 
     }
 });
 
-// Opcional: Asegurarte de que el menú se oculte si se redimensiona la ventana
+
 window.addEventListener('resize', function() {
     const menu = document.querySelector('.menu');
     if (window.innerWidth >= 600) {
-        menu.style.display = 'flex'; // Mostrar menú en pantallas grandes
+        menu.style.display = 'flex'; 
     } else {
-        menu.style.display = 'none'; // Ocultar menú en pantallas pequeñas
+        menu.style.display = 'none'; 
     }
 });
 </script>
@@ -134,7 +133,9 @@ window.addEventListener('resize', function() {
                     Precio: 5$
                 </p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+                
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
 
             <div class="product-item">
@@ -153,7 +154,9 @@ window.addEventListener('resize', function() {
                    
                 <p class="description">Precio: 4$</p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+                
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
 
             <div class="product-item">
@@ -168,11 +171,12 @@ window.addEventListener('resize', function() {
                     <br>
                     <div class="dot dot-black"></div>
                     <div class="dot dot-green"></div>
-                    <div class="dot dot-gainsboro"></div>
-                    <p class="description"> Unitalla</p>  
+                    <p class="description"> Unisex</p>  
                 <p class="description">Precio: 3$</p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
             <div class="product-item">
                 <img src="img/minilanyardsef.jpg" alt="Product 5">
@@ -184,14 +188,14 @@ window.addEventListener('resize', function() {
                     <h2><span style="font-size: 20px; font-weight: bold;">Color:</span></h2>
                     <br> 
                     <div class="dot dot-black"></div>
-                    <div class="dot dot-green"></div>
-                    <div class="dot dot-gainsboro"></div>
-                         
+                    <div class="dot dot-green"></div>                        
                 </div>
-                <p class="description"> Unitalla</p>
+                <p class="description"> Unisex</p>
                 <p class="description">Precio: 1.50$</p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
 
             <div class="product-item">
@@ -207,7 +211,8 @@ window.addEventListener('resize', function() {
                 </div>
                 <p class="description">Precio: 3$</p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
 
             <div class="product-item">
@@ -226,7 +231,8 @@ window.addEventListener('resize', function() {
                     <br>
                 <p class="description">Precio: 3$</p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
 
             <div class="product-item">
@@ -244,7 +250,8 @@ window.addEventListener('resize', function() {
                     <br>
                 <p class="description">Precio: 12$</p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
             <div class="product-item">
                 <img src="img/retratocoradef.jpg" alt="Product 17">
@@ -261,7 +268,9 @@ window.addEventListener('resize', function() {
                 
                 <p class="description">Precio: 12$</p>
                 <br>
-                <button class="btn-add-cart">Añadir al carrito</button>
+                
+                <title>Carrito Button</title>
+                <button class="button">Añadir al carrito</button>
             </div>
 
     </div>
