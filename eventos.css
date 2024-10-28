@@ -33,7 +33,7 @@
     opacity: 0; 
     visibility: hidden;
     animation-delay: 0.2s; /* Delay for Size1 */
-}
+    }
 
 .Size2 {
     font-size: 39px;
@@ -43,27 +43,31 @@
     opacity: 0; 
     visibility: hidden;
     animation-delay: 0.6s; /* Delay for Size2 */
-}
+    }
 
 .Marco1 {
     background-image: url('img/rectangulo.png');
-    background-size: contain;
-    background-size: 750px 600px;
+    background-size: 800px;
     background-repeat: no-repeat;
     padding-top: 60px;
     padding-left: 20px;
-}
+    }
 
-.fotogrupal img{
-    position: relative;
-    border-radius:10%;
-    left: 940px; 
-    width: 700px;
-    height: 525px;
-}
+.fotogrupal {
+        width: 100%; /* Asegúrate de que el contenedor ocupe el 100% del ancho */
+        overflow: hidden; /* Evita que los elementos internos se desborden */
+    }
+    
+.fotogrupal img {
+    width: 50%; /* Establece el ancho al 50% en pantallas grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    float: right; /* Alinea la imagen a la derecha */
+    margin-right: 30px; /* Añade un margen izquierdo para separación */
+    border-radius: 10%;
+    }
 
 .Fondo1{
-    background-image: url('img/Fondo\ 1.png');
+    background-image: url("img/Fondo\ 1.png");
     position: fixed; 
     top: 0; 
     left: 0;
@@ -73,6 +77,8 @@
     background-position: center; 
     z-index: -1; 
 }
+
+
 .Subfondo{
     position: relative; 
     top: 560px; 
@@ -82,7 +88,7 @@
     background-color: #171d13;
     transform: translate(-50%, -50%); 
     z-index: -1; 
-}
+    }
 
 .Servicios{
     position: relative; 
@@ -97,6 +103,7 @@
     display:flex; 
 }
 
+
 .Imagendelista img {
     flex: 0 0 50%;
     width: 50%; 
@@ -104,7 +111,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1); 
     margin-left: 250px;
     
-}
+    }
+
 
 .Cuadrodelista{
     background-color: #D9D9D9;
@@ -163,4 +171,61 @@
     list-style-type: none; 
 }
 
+/* ////// RESPONSIVE //////// */
+@media (max-width: 768px) {
+    .Marco1 {
+        width: 100%; 
+        padding: 20px; 
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .Size1, .Size2 {
+        font-size: 30px; 
+        margin-bottom: 10px; 
+        opacity: 1; 
+        visibility: visible; 
+    }
+
+    .fotogrupal img {
+        width: 100%; 
+        float: none; 
+        margin-left: 0; 
+        margin-top: 10%;
+    }
+
+    .Primerafila, .Segundafila {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .Imagendelista img, .Imagendelista2 img {
+        width: 100%; 
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .Cuadrodelista, .Cuadroparrafo2 {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .Subfondo {
+        min-height: auto; 
+        padding: 20px; 
+        margin-bottom: 10%; 
+    }
+    .Subfondo2 {
+        min-height: 890px; 
+        padding: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .Servicios {
+        font-size: 40px; 
+        margin-bottom: 20px; 
+    }
+
+
+}
 /*/ FIN DE EVENTOS / /
